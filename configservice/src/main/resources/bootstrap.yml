@@ -3,12 +3,13 @@ server:
 
 spring:
   cloud:
-    server:
-      git:
-        # url de repositorio donde estan ubidados los yml de los proyectos
-        uri: https://github.com/marianoldm/BootcampSpringCloud.git
-        # especificamos donde esta los archivos de configuracion de nuestros proyectos
-        searchPaths: config-data
+    config:
+      server:
+        git:
+          # url de repositorio donde estan ubidados los yml de los proyectos
+          uri: https://github.com/marianoldm/BootcampSpringCloud.git
+          # especificamos donde esta los archivos de configuracion de nuestros proyectos
+          searchPaths: config-data
   security:
     user:
       name: root
